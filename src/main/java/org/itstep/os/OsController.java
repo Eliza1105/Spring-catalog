@@ -25,7 +25,7 @@ import javax.servlet.http.HttpServletResponse;
             return "oss";
         }
 
-        @PostMapping(value="/oss_add")
+        @PostMapping(value="/os_add")
         public String saveOs(Os os, Model model, HttpServletResponse response) {
             //Передать id в заголовке ответа
             Os newOs = osService.save(os);
